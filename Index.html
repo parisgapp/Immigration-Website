@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Immigration Weekly</title>
+</head>
+<body>
+
+<h1> Immigration Weekly</h1>
+<p>PARAGRAPH 1.</p>
+
+<div class="vertical-menu">
+   <a href="#" class="active">Home</a>
+   <a href="#">About Page</a>
+   <a href="#">Immigration Stories</a>
+   <a href="#">Weekly Favorite Immigration Article</a>
+</div>
+   
+
+
+ <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+	
+	
+	 <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html> 
+<!-- https://developers.google.com/maps/documentation/javascript/adding-a-google-map -->
