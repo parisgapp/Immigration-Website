@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <link rel="stylesheet" href="css/index.css">
 <title> Immigration Weekly</title>
+  <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
 </head>
 <body>
 
-<h1> Immigration Weekly</h1>
-<p>PARAGRAPH 1.</p>
-
-<div class="vertical-menu">
-   <a href="#" class="active">Home</a>
-   <a href="#">About Page</a>
-   <a href="#">Immigration Stories</a>
-   <a href="#">Weekly Favorite Immigration Article</a>
+<div>
+<ul>
+  <li><a href="#" class="active">Home</a></li>
+  <li><a href="stats.html">Statistics</a></li>
+   <li><a href="weeklyarticle.html">Weekly Immigration Article</a></li>
+   <li><a href="regionsstats.html">Quick Facts</a></li>
+   <li style="float:right"><a href="about.html">About</a></li>
+</ul>
 </div>
    
+   <h1> Immigration Weekly</h1>
+<p> Welcome to Immigration Weekly! </p>
 
 
- <script>
+<div id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18876276.614011902!2d-113.71945708548277!3d54.723116567819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sus!4v1574530316050!5m2!1sen!2sus" width="100%" height="200%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+<!--<script>
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
@@ -28,12 +41,14 @@ function initMap() {
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
-    </script>
+    </script>-->
+
 	
 	
 	 <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpPzv-8iGzQcXzcK-3GInZLvrxX-zzjKs&callback=initMap" type="text/javascript">
     </script>
 </body>
 </html> 
 <!-- https://developers.google.com/maps/documentation/javascript/adding-a-google-map -->
+
